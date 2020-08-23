@@ -19,6 +19,7 @@ const Main = () => {
 						heading={demo.name}
 						description={demo.description}
 						side={index % 2 === 0 ? 'left' : 'right'}
+						key={index}
 					/>
 				))}
 			</Features>
