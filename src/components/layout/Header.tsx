@@ -12,10 +12,23 @@ const Header = () => {
 	);
 };
 
-export const InternalHeader = ({ text }: { text: string }) => {
+interface InternalProps {
+	text: string;
+	subtext?: string;
+}
+export const InternalHeader = ({ text, subtext }: InternalProps) => {
 	return (
 		<header className='major container medium'>
 			<h2>{text}</h2>
+			{subtext && <p>{subtext}</p>}
+		</header>
+	);
+};
+
+export const SmallInternalHeader = ({ text }: InternalProps) => {
+	return (
+		<header>
+			<h3>{text}</h3>
 		</header>
 	);
 };

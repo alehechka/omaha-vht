@@ -12,7 +12,7 @@ interface FeatureProps extends FeatureSideProps {
 	side: 'left' | 'right';
 }
 
-const Feature = ({ to, icon, image, heading, description, side }: FeatureProps) => {
+export const Feature = ({ to, icon, image, heading, description, side }: FeatureProps) => {
 	return (
 		<section className={`feature ${side}`}>
 			<a href={to} className={`image icon solid ${icon}`}>
