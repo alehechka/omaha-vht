@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
 	return (
 		<div id='header'>
-			<a href='/index.html'>
+			<a href='/'>
 				<span className='logo icon solid fa-home' style={{ cursor: 'pointer' }}></span>
 			</a>
 			<h1>Welcome to Omaha Virtual Home Tours</h1>
