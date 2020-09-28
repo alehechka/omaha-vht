@@ -21,12 +21,14 @@
 .gallery-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .gallery-image {
 	margin-bottom: 10px;
-	width: 300px;
+	max-width: 300px;
+	height: auto;
+	align-self: flex-start;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
